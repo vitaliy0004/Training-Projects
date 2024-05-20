@@ -1,1 +1,19 @@
-<h1 align="center">Привет 👋 Меня Зовут Виталий!</h1>
+<h1 align="center">В этом репозитории представленые тренеровочные проекты, каждый из которых закрепляет определённую тему</h1>
+
+<h3 align="center">m_1_9</h3>
+<h3 align="center">m_1_10</h3>
+<h3 align="center">m_1_11</h3>
+<h3 align="center">m_1_12</h3>
+<h3 align="center">m_1_13</h3>
+<h3 align="center">m_1_14</h3>
+<h3 align="center">m_1_15</h3>
+<h3 align="center">m_1_16</h3>
+<h3 align="center">m_1_17</h3>
+<h3 align="center">m_1_18</h3>
+<h3 align="center">m_1_19</h3>
+<h3 align="center">m_2_2</h3>
+<h3 align="center">m_2_3</h3>
+<h3 align="center">m_2_4</h3>
+<h3 align="center">m_2_5</h3>
+<h3 align="center">m_2_6</h3>
+<h3 align="center">m_2_7</h3>
