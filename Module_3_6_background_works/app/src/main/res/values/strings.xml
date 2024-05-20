@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">background_works</string>
+    <string name="set_an_alarm_clock">когда вы хотите поставить будильник</string>
+    <string name="time_clock">выберите время будильника</string>
+    <string name="choose_day">выбранный день</string>
+    <string name="choose_time">выбранное время</string>
+    <string name="alarm_set">поставить будильник</string>
+    <string name="button_time">выбрать время </string>
+    <string name="button_day">выбрать дату </string>
+    <string name="comeback">вернуться </string>
+    <string name="put_alarm">завести будильник</string>
+    <string name="region">введите регионт</string>
+    <string name="city">введите ваш город </string>
+    <string name="input_params">введите все параметры </string>
+
+</resources>

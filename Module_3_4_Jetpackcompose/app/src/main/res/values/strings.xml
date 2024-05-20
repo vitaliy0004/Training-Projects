@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Jetpack compose</string>
+    <string name="refresh">проверьте подключение\nк интернету</string>
+    <string name="episode">Episodes:</string>
+    <string name="first_seen">First seen in:</string>
+    <string name="last_location">Last know locanion:</string>
+    <string name="gender">Specles and gender:</string>
+    <string name="status">Live status:</string>
+    <string name="location">Last known location:</string>
+</resources>

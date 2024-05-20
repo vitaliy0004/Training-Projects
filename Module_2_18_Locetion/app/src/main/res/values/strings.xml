@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Module_2_18_Locetion</string>
+    <string name="google_maps_key" templateMergeStrategy = "preserve" translatable="false">AIzaSyD296Yc7vUPOh0247rG3DfAz-xvcqqNMX0</string>
+
+</resources>

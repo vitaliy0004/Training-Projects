@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Module_2_2_Timer</string>
+    <string name="btn_reset">Reset</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_stop">Stop</string>
+    <string name="middle_point">:</string>
+    <string name="tv_digital_time">0%1d</string>
+    <string name="doubleZero">00</string>
+</resources>

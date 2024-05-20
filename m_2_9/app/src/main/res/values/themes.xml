@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Modul_2_7" parent="Theme.Material3.DayNight.NoActionBar">
+
+
+        <item name="fontFamily">@font/aclonica</item>
+        <!-- Primary brand color.(backgraud)                  -->
+        <item name="colorPrimary">@color/teal_700</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <!--текст в кнопках -->
+        <item name="colorOnPrimary">@color/yellow</item>
+
+        <item name="colorSecondary">@color/teal_700</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/purple_200</item>
+        <!-- Status Bar color.                  -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Action Bar color.                  -->
+        <item name="colorSurface">?attr/colorOnPrimary</item>
+
+    </style>
+    <style name="Theme.Modul_2_7" parent="Base.Theme.Modul_2_7" />
+</resources>

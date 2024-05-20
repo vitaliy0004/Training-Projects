@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">school mem</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="date_of_Birth">indicate your date of birth</string>
+    <string name="indicate_your_date">indicate your date of birth</string>
+    <string name="button_finish">begin</string>
+    <string name="enter_date_of_birth">enter date of birth</string>
+   <string name="check_the_result">check the result</string>
+    <string name="back">back</string>
+    <string name="restart">restart</string>
+    <string name="text_welcome" translatable="false">welcome</string>
+    <string-array name="question">
+        <item>Please, Rate Android course?</item>
+        <item>Do you want to recommend us to your friends?</item>
+        <item>Did you use the course feedback?</item>
+    </string-array>
+    <string-array name="question_one_answers">
+        <item>F</item>
+        <item>C</item>
+        <item>B</item>
+        <item>A++</item>
+    </string-array>
+    <string-array name="question_one_feedback">
+        <item>You have rated us F.</item>
+        <item>You have rated us C.</item>
+        <item>You have rated us B.</item>
+        <item>You have rated us A++.</item>
+    </string-array>
+    <string-array name="question_two_answers">
+        <item>Sure</item>
+        <item>Already recommend</item>
+        <item>I don\'t know</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="question_two_feedback">
+        <item>You want to recommend our course.</item>
+        <item>You already recommend our course.</item>
+        <item>You need more time for make recommendations.</item>
+        <item>You are not ready to recommendations.</item>
+    </string-array>
+    <string-array name="question_three_answers">
+        <item>Yes</item>
+        <item>Not yet, but now I will use it</item>
+        <item>No, it hasn\'t happened yet</item>
+        <item >No, and I won\'t</item>
+    </string-array>
+    <string-array name="question_three_feedback">
+        <item>Thanks for feedback!</item>
+        <item>Thanks for feedback!</item>
+        <item>Waiting for your feedback!</item>
+        <item>We hope you will have the opportunity to give us feedback.</item>
+    </string-array>
+    <string name="indicate_your_date_of_birth">indicate your date of birth</string>
+</resources>

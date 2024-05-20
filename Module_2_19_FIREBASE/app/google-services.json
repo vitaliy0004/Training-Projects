@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "280957381055",
+    "project_id": "nomadic-vehicle-413713",
+    "storage_bucket": "nomadic-vehicle-413713.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280957381055:android:8621864246e9b8621d190a",
+        "android_client_info": {
+          "package_name": "com.example.module_2_19_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIQ6NmhSlJOWMo0XPFcWySakEwn7ZK51I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

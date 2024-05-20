@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/welcome">
+
+
+    <fragment
+        android:id="@+id/welcome"
+        android:name="com.example.modul_2_9.Welcome"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcome_to_test"
+            app:destination="@id/test"
+            app:enterAnim="@anim/slid_in_left"
+            app:exitAnim="@anim/slid_out_left"
+            app:popUpTo="@id/welcome" />
+    </fragment>
+    <fragment
+        android:id="@+id/test"
+        android:name="com.example.modul_2_9.Test"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_test" >
+
+        <action
+            android:id="@+id/action_test_to_welcome2"
+            app:destination="@id/welcome"
+            app:enterAnim="@anim/slid_back"
+            app:exitAnim="@anim/slid_out_left"
+            app:popUpTo="@id/welcome"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_test_to_test_result"
+            app:destination="@id/test_result"
+            app:enterAnim="@anim/slid_in_rigth"
+            app:exitAnim="@anim/slid_out_left"
+            app:popUpTo="@id/welcome" />
+    </fragment>
+    <fragment
+        android:id="@+id/test_result"
+        android:name="com.example.modul_2_9.TestResult"
+        android:label="fragment_finish2"
+        tools:layout="@layout/fragment_test_result" >
+
+        <action
+            android:id="@+id/action_test_result_to_test"
+            app:destination="@id/test"
+            app:enterAnim="@anim/slid_back"
+            app:exitAnim="@anim/slid_out_left"
+            app:popUpTo="@id/welcome"
+            app:popUpToInclusive="false" />
+
+    </fragment>
+</navigation>
