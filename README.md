@@ -13,7 +13,7 @@
 <h3 align="left">m_1_19 - знакомство с платфомой и библиотеками Firebase, как получать информацию о крашах ,о входах в приложения, как отправлять уведомление с платформы Firebase и ещё множество друой статистики</h3>
 <h3 align="left">m_2_2 - знакомство с созданием собственных View (Custom view)</h3>
 <h3 align="left">m_2_3 - знакомство с DiffUtil; так же в проекте использовались библиотеки Pagination,gson,retrofit,glide,Hilt,RecyclerView</h3>
-<h3 align="left">m_2_4</h3>
+<h3 align="left">m_2_4 - знакомство с Jetpack Compose,Coil; так же в проекте использовались библиотеки navigation,Hilt,glide,Compose Paging,gson,retrofit</h3>
 <h3 align="left">m_2_5</h3>
 <h3 align="left">m_2_6</h3>
 <h3 align="left">m_2_7</h3>
