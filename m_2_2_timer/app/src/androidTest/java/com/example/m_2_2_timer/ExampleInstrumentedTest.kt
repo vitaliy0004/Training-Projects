@@ -1,4 +1,4 @@
-package com.example.timerPresent
+package com.example.m_2_2_timer
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

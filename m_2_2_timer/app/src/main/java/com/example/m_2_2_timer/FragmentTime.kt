@@ -1,4 +1,4 @@
-package com.example.timerPresent
+package com.example.m_2_2_timer
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -25,7 +25,7 @@ class FragmentTime : Fragment() {
         val clock = binding.myAnalogClock
 
         binding.btnRun.setOnClickListener {
-            clock.timer  .isPlayed = !clock.timer.isPlayed
+            clock.timer.isPlayed = !clock.timer.isPlayed
             binding.btnReset.isEnabled = !clock.timer.isPlayed
             if (clock.timer.isPlayed) {
                 clock.start()

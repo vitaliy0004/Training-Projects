@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.timerPresent.MainActivity">
+    tools:context="com.example.m_2_2_timer.MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/one"
-        android:name="com.example.timerPresent.FragmentTime"
+        android:name="com.example.m_2_2_timer.FragmentTime"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

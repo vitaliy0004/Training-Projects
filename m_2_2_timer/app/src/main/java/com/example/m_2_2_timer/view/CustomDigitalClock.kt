@@ -1,18 +1,18 @@
-package com.example.timerPresent.view
+package com.example.m_2_2_timer.view
 
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.module_2_2_timer.R
-import com.example.timerPresent.TimeState
+import com.example.m_2_2_timer.TimeState
 
 class CustomDigitalClock @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
 ) : ConstraintLayout(context, attrs, defStyleAttr) {
-    private val tvHour : TextView
+    private val tvHour: TextView
     private val tvMinute: TextView
     private val tvSecond: TextView
     private var timer = TimeState(0L, false)
@@ -21,6 +21,7 @@ class CustomDigitalClock @JvmOverloads constructor(
                 return
             field = value
         }
+
     init {
         val root = inflate(context, R.layout.view_digital_timer, this)
         tvHour = root.findViewById(R.id.tv_hour)
@@ -30,12 +31,13 @@ class CustomDigitalClock @JvmOverloads constructor(
         tvMinute.text = resources.getString(R.string.doubleZero)
         tvSecond.text = resources.getString(R.string.doubleZero)
     }
+
     fun setTime(timeState: TimeState) {
         val timeToSet = arrayListOf(0, 0, 0)
         timeToSet[0] = (timeState.time / (1000 * 3600)).toInt()
         timeToSet[1] = (timeState.time / (1000 * 60)).toInt()
         timeToSet[2] = (timeState.time / 1000).toInt()
-        tvHour.text = when(timeToSet[0]) {
+        tvHour.text = when (timeToSet[0]) {
             in 0..9 -> resources.getString(R.string.tv_digital_time, timeToSet[0])
             in 10..24 -> timeToSet[0].toString()
             else -> if (timeToSet[0] % 24 < 10) resources.getString(
@@ -43,7 +45,7 @@ class CustomDigitalClock @JvmOverloads constructor(
                 timeToSet[0]
             ) else (timeToSet[0] % 24).toString()
         }
-        tvMinute.text = when(timeToSet[1]) {
+        tvMinute.text = when (timeToSet[1]) {
             in 0..9 -> resources.getString(R.string.tv_digital_time, timeToSet[1])
             in 10..60 -> timeToSet[1].toString()
             else -> if (timeToSet[1] % 60 < 10) resources.getString(
@@ -51,7 +53,7 @@ class CustomDigitalClock @JvmOverloads constructor(
                 timeToSet[1]
             ) else (timeToSet[1] % 60).toString()
         }
-        tvSecond.text = when(timeToSet[2]) {
+        tvSecond.text = when (timeToSet[2]) {
             in 0..9 -> resources.getString(R.string.tv_digital_time, timeToSet[2])
             in 10..59 -> timeToSet[2].toString()
             else -> if (timeToSet[2] % 60 < 10) resources.getString(

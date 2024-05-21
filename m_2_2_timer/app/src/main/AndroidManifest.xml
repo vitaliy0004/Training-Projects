@@ -10,10 +10,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Module_2_2_Timer"
+        android:theme="@style/Theme.m_2_2_timer"
         tools:targetApi="31">
         <activity
-            android:name="com.example.timerPresent.MainActivity"
+            android:name="com.example.m_2_2_timer.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

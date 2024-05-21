@@ -1,4 +1,4 @@
-package com.example.timerPresent.view
+package com.example.m_2_2_timer.view
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -6,12 +6,10 @@ import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.Rect
-import android.os.Parcel
-import android.os.Parcelable
 import android.util.AttributeSet
 import android.util.TypedValue
 import android.view.View
-import com.example.timerPresent.TimeState
+import com.example.m_2_2_timer.TimeState
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.CoroutineStart
 import kotlinx.coroutines.Dispatchers
@@ -70,6 +68,7 @@ class CustomAnalogClock : View {
         attrs,
         defStyleAttrs
     )
+
     @SuppressLint("DrawAllocation")
     override fun onDraw(canvas: Canvas) {
         if (!isInit) {
@@ -177,7 +176,9 @@ class CustomAnalogClock : View {
         }
     }
 
-    fun stop() { timer.isPlayed = false }
+    fun stop() {
+        timer.isPlayed = false
+    }
 
     fun reset() {
         timer.apply {
