@@ -10,7 +10,7 @@ import com.google.android.gms.maps.model.LatLng
 import data.GetLocation
 import data.LocationStructure
 
-class MainViewModel() : ViewModel() {
+class MainViewModel : ViewModel() {
     private var locationListener: LocationSource.OnLocationChangedListener? = null
     var map: GoogleMap? = null
 
