@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">m_1_13_retrofit</string>
+    <string name="talk">talk</string>
+    <string name="helper_fragment">HelperFragment</string>
+</resources>
