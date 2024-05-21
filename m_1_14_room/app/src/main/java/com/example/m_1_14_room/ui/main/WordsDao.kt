@@ -1,4 +1,4 @@
-package com.example.modul_2__15.ui.main
+package com.example.m_1_14_room.ui.main
 
 import androidx.room.Dao
 import androidx.room.Delete
@@ -13,14 +13,16 @@ interface WordsDao {
     //для получения всего списка
     @Query("SELECT * FROM words")
     //Flow чтобы следить за изменениями в таблице
-    fun  getWords(): Flow<List<Words>>
+    fun getWords(): Flow<List<Words>>
 
     // вставлять значения
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun addWord(words: Words)
+
     // удалять
     @Delete
     suspend fun delete(words: List<Words>)
+
     // обновлять
     @Update
     suspend fun update(words: Words)

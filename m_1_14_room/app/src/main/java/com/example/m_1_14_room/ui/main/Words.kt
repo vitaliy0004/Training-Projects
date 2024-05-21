@@ -1,4 +1,4 @@
-package com.example.modul_2__15.ui.main
+package com.example.m_1_14_room.ui.main
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -9,8 +9,8 @@ import androidx.room.PrimaryKey
 data class Words(
     @PrimaryKey
     //сохраняет только уникальные ключи; autoGenerate хранит количество значений(id:1; id:2 ...)
-    @ColumnInfo(name= "word")
-    val word:String,
-    @ColumnInfo(name= "number")
-    val number:Int
+    @ColumnInfo(name = "word")
+    val word: String,
+    @ColumnInfo(name = "number")
+    val number: Int
 )

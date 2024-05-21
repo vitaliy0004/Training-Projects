@@ -11,9 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:hint="I'll add the word to the dictionary"
+        android:hint="@string/word_to_the_dictionary"
         android:inputType="text"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/message"
         tools:ignore="MissingConstraints,TouchTargetSizeCheck,VisualLintTextFieldSize"
         tools:layout_editor_absoluteX="20dp" />
@@ -21,8 +21,8 @@
         android:id="@+id/add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="add"
-        android:textSize="16dp"
+        android:text="@string/add"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
@@ -31,8 +31,8 @@
         android:id="@+id/delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="delete"
-        android:textSize="16dp"
+        android:text="@string/delete"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />

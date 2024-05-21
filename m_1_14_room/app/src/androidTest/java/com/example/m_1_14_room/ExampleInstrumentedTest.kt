@@ -1,4 +1,4 @@
-package com.example.modul_2__15
+package com.example.m_1_14_room
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

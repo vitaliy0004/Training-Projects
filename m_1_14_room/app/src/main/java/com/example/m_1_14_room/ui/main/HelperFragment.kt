@@ -1,7 +1,6 @@
-package com.example.modul_2__15.ui.main
+package com.example.m_1_14_room.ui.main
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -10,22 +9,20 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
-import com.example.module_2_15_room.databinding.FragmentMainBinding
-import com.google.android.material.snackbar.Snackbar
+import com.example.m_1_14_room.R
+import com.example.m_1_14_room.databinding.FragmentMainBinding
 import kotlinx.coroutines.launch
 
 class HelperFragment : Fragment() {
-
-    companion object {
-        fun newInstance() = HelperFragment()
-    }
     private lateinit var binding: FragmentMainBinding
-    private val viewModel: MainViewModel by viewModels{object : ViewModelProvider.Factory {
-        override fun <T : ViewModel> create(modelClass: Class<T>): T {
-            val wordDao = (requireActivity().application as App).db.wordsDao()
-            return MainViewModel(wordDao) as T
+    private val viewModel: MainViewModel by viewModels {
+        object : ViewModelProvider.Factory {
+            override fun <T : ViewModel> create(modelClass: Class<T>): T {
+                val wordDao = (requireActivity().application as App).db.wordsDao()
+                return MainViewModel(wordDao) as T
+            }
         }
-    }}
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,30 +31,30 @@ class HelperFragment : Fragment() {
         binding = FragmentMainBinding.inflate(inflater, container, false)
         return binding.root
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.add.setOnClickListener{
+        binding.add.setOnClickListener {
             val text = binding.editText.text.toString()
             val regex = Regex("[^a-zA-Zа-яА-Я^-]+")
             val isPattern = !regex.containsMatchIn(text)
-            if (isPattern && text !=""){
+            if (isPattern && text != "") {
                 viewModel.addButton(text)
-            }
-            else{
-                binding.message.text ="Ошибка"
+            } else {
+                binding.message.text = getString(R.string.error)
 
             }
         }
 
-        binding.delete.setOnClickListener{
+        binding.delete.setOnClickListener {
             viewLifecycleOwner.lifecycleScope.launch {
                 viewModel.onDelete()
             }
         }
 
-        viewLifecycleOwner.lifecycleScope.launchWhenStarted {
-            viewModel.allWords.collect{
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewModel.allWords.collect {
 
                 binding.message.text = it.joinToString(separator = "\n")
 
