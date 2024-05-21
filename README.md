@@ -6,7 +6,7 @@
 <h3 align="left">m_1_12 - знакоства c патернем mvvm</h3>
 <h3 align="left">m_1_13 - знакомство с библиотеками retrofit,Json,moshi и glide</h3>
 <h3 align="left">m_1_14 - знакомство с room database</h3>
-<h3 align="left">m_1_15 - знакомство с Dagger,Hilt; так же в проекте использовалось gson,retrofit,glide</h3>
+<h3 align="left">m_1_15 - знакомство с Dagger,Hilt; так же в проекте использовались библиотеки gson,retrofit,glide</h3>
 <h3 align="left">m_1_16</h3>
 <h3 align="left">m_1_17</h3>
 <h3 align="left">m_1_18</h3>
