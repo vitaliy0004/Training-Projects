@@ -1,10 +1,10 @@
-package com.example.dependency_injection
+package com.example.m_2_5_dependency_injection
 
 import android.app.Application
-import com.example.dependency_injection.di.dagger.AppComponent
-import com.example.dependency_injection.di.dagger.DaggerAppComponent
-import com.example.dependency_injection.di.koin.appModule
-import com.example.dependency_injection.di.koin.dataModule
+import com.example.m_2_5_dependency_injection.di.dagger.AppComponent
+import com.example.m_2_5_dependency_injection.di.dagger.DaggerAppComponent
+import com.example.m_2_5_dependency_injection.di.koin.appModule
+import com.example.m_2_5_dependency_injection.di.koin.dataModule
 import org.koin.core.context.startKoin
 
 

@@ -1,7 +1,7 @@
-package com.example.dependency_injection.di.dagger
+package com.example.m_2_5_dependency_injection.di.dagger
 
 import dagger.Component
-import com.example.dependency_injection.presentation.MainActivity
+import com.example.m_2_5_dependency_injection.presentation.MainActivity
 import javax.inject.Singleton
 
 @Singleton

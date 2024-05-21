@@ -1,4 +1,4 @@
-package com.example.dependency_injection.entity
+package com.example.m_2_5_dependency_injection.entity
 
 interface Bike {
     val logo: String

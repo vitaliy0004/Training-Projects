@@ -1,10 +1,10 @@
-package com.example.dependency_injection.di.dagger
+package com.example.m_2_5_dependency_injection.di.dagger
 
 import dagger.Module
 import dagger.Provides
-import com.example.dependency_injection.data.FabriceBike
-import com.example.dependency_injection.data.FabriceFrame
-import com.example.dependency_injection.data.FabriceWheel
+import com.example.m_2_5_dependency_injection.data.FabriceBike
+import com.example.m_2_5_dependency_injection.data.FabriceFrame
+import com.example.m_2_5_dependency_injection.data.FabriceWheel
 import javax.inject.Singleton
 
 @Module

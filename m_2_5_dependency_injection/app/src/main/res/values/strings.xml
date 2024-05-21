@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">dependency_injection</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">m_2_5_dependency_injection</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="koin">Koin</string>
     <string name="dagger">Dagger</string>
+    <string name="info_bake">Номер велосипеда:%s,\n Номер рамы:%d,\n номер первого колеса:%d\nномер второго колеса: %d</string>
 </resources>

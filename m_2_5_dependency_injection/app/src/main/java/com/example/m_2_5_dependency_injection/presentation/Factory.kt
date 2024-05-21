@@ -1,8 +1,8 @@
-package com.example.dependency_injection.presentation
+package com.example.m_2_5_dependency_injection.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.dependency_injection.data.FabriceBike
+import com.example.m_2_5_dependency_injection.data.FabriceBike
 
 class Factory(
     private val bike: FabriceBike

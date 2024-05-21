@@ -1,9 +1,9 @@
-package com.example.dependency_injection.presentation
+package com.example.m_2_5_dependency_injection.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.dependency_injection.data.FabriceBike
-import com.example.dependency_injection.entity.Bike
+import com.example.m_2_5_dependency_injection.data.FabriceBike
+import com.example.m_2_5_dependency_injection.entity.Bike
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch

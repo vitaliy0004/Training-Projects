@@ -1,4 +1,4 @@
-package com.example.dependency_injection
+package com.example.m_2_5_dependency_injection
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

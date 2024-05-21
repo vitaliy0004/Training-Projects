@@ -1,6 +1,6 @@
-package com.example.dependency_injection.data
+package com.example.m_2_5_dependency_injection.data
 
-import com.example.dependency_injection.data.dto.BikeDto
+import com.example.m_2_5_dependency_injection.data.dto.BikeDto
 
 
 class FabriceBike(

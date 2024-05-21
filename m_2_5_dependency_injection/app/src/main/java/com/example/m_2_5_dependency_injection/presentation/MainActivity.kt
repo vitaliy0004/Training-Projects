@@ -1,28 +1,28 @@
-package com.example.dependency_injection.presentation
+package com.example.m_2_5_dependency_injection.presentation
 
 
 import android.graphics.Color
-import com.example.dependency_injection.App
+import com.example.m_2_5_dependency_injection.App
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.lifecycle.lifecycleScope
-import com.example.dependency_injection.R
-import com.example.dependency_injection.databinding.ActivityMainBinding
+import com.example.m_2_5_dependency_injection.R
+import com.example.m_2_5_dependency_injection.databinding.ActivityMainBinding
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
-    var koin = false
+    private var koin = false
 
     @Inject
     lateinit var factory: Factory
     private val viewModelDagger: MainViewModel by viewModels { factory }
     private val viewModelKoin by viewModel<MainViewModel>()
 
-    lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -42,10 +42,13 @@ class MainActivity : AppCompatActivity() {
             viewModel.bikes.collect { bike ->
                 Toast.makeText(
                     applicationContext,
-                    "Номер велосипеда:${bike.logo},\n" +
-                            "Номер рамы:${bike.frame.number},\n" +
-                            "номер первого колеса:${bike.wheels[0].wheel}\n" +
-                            "номер второго колеса:${bike.wheels[1].wheel}",
+                    getString(
+                        R.string.info_bake,
+                        bike.logo,
+                        bike.frame.number,
+                        bike.wheels[0].wheel,
+                        bike.wheels[1].wheel
+                    ),
                     Toast.LENGTH_SHORT
                 ).show()
             }
