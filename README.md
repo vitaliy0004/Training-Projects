@@ -2,8 +2,8 @@
 
 <h3 align="left">m_1_9 - AndroidX Navigation, animetion(Переходы между компонентами,Сложные анимации,Lottie),Работа с AndroidManifest(изменение иконы приложения, темы приложения, подлючениеинтернета) ,работа со стилями,работа с ресурсами проекта (raw,anim,font),работа со строками,Часовые пояса(выбор времяни и даты)</h3>
 <h3 align="left">m_1_10 - Shared Preference, работа с Progresbar</h3>
-<h3 align="left">m_1_11 - более углоблённое знакомство с Shared Preference и начало знакоства со смыслом патерна mvvm</h3>
-<h3 align="left">m_1_12</h3>
+<h3 align="left">m_1_11 - более углоблённое знакомство с Shared Preference</h3>
+<h3 align="left">m_1_12 - начало знакоства c патерна mvvm</h3>
 <h3 align="left">m_1_13</h3>
 <h3 align="left">m_1_14</h3>
 <h3 align="left">m_1_15</h3>
