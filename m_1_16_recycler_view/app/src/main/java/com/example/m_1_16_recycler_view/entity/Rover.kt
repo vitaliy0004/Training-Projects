@@ -1,6 +1,6 @@
-package entity
+package com.example.m_1_16_recycler_view.entity
 
-import data.CameraXDto
+import com.example.m_1_16_recycler_view.data.CameraXDto
 
 interface Rover {
     val cameras: List<CameraXDto>

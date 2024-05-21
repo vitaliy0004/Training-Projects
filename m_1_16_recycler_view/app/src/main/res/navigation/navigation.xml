@@ -5,20 +5,17 @@
     app:startDestination="@id/listFragment">
     <fragment
         android:id="@+id/listFragment"
-        android:name="presentation.ListFragment"
+        android:name="com.example.m_1_16_recycler_view.presentation.ListFragment"
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" >
         <action
-            android:id="@+id/action_listFragment3_to_photoFragment2"
+            android:id="@+id/action_listFragment_to_photoFragment"
             app:destination="@id/photoFragment" />
     </fragment>
     <fragment
         android:id="@+id/photoFragment"
-        android:name="secondFragment.PhotoFragment"
+        android:name="com.example.m_1_16_recycler_view.secondFragment.PhotoFragment"
         android:label="fragment_photo"
         tools:layout="@layout/fragment_photo" >
-        <argument
-            android:name="photo_info"
-            android:defaultValue="null" />
     </fragment>
 </navigation>

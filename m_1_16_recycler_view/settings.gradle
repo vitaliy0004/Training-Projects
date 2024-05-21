@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Module_2_16_Nasa"
+rootProject.name = "m_1_16_recycler_view"
 include ':app'

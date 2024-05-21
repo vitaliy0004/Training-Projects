@@ -1,25 +1,25 @@
-package presentation
+package com.example.m_1_16_recycler_view.presentation
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import data.PhotosDto
-import nasaAPI.Repository
+import com.example.m_1_16_recycler_view.data.PhotosDto
+import com.example.m_1_16_recycler_view.nasaAPI.Repository
 
-class MarsPagingSource: PagingSource<Int, PhotosDto>() {
+class MarsPagingSource(private val viewModel: MainViewModel) : PagingSource<Int, PhotosDto>() {
     override fun getRefreshKey(state: PagingState<Int, PhotosDto>): Int? = 1
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, PhotosDto> {
         val page = params.key ?: 1
         return kotlin.runCatching {
-            Repository().getPhotoSputnik(page)
+            viewModel.photoSputnik(page)
         }.fold(
             onSuccess = {
                 LoadResult.Page(
                     data = it.photos,
                     prevKey = null,
-                    nextKey = if (it.photos.isEmpty()) null else page+1
+                    nextKey = if (it.photos.isEmpty()) null else page + 1
                 )
             },
-            onFailure = { LoadResult.Error(it)}
+            onFailure = { LoadResult.Error(it) }
         )
     }
 }

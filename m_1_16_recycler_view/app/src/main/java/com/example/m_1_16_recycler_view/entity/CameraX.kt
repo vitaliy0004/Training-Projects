@@ -1,4 +1,4 @@
-package entity
+package com.example.m_1_16_recycler_view.entity
 
 
 interface CameraX {
