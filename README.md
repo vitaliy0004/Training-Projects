@@ -15,5 +15,5 @@
 <h3 align="left">m_2_3 - знакомство с DiffUtil; так же в проекте использовались библиотеки Pagination,gson,retrofit,glide,Hilt,RecyclerView</h3>
 <h3 align="left">m_2_4 - знакомство с Jetpack Compose,Coil; так же в проекте использовались библиотеки navigation,Hilt,glide,Compose Paging,gson,retrofit</h3>
 <h3 align="left">m_2_5 - знакомство с Koin и его сравнение с работой Daggera</h3>
-<h3 align="left">m_2_6</h3>
+<h3 align="left">m_2_6 - знакомство с работой в фоне(AlarmManager,WorkManager); так же в проекте использовалась библиотека navigation</h3>
 <h3 align="left">m_2_7</h3>
