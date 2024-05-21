@@ -1,4 +1,4 @@
-package com.example.background_works
+package com.example.m_2_6_background_works
 
 object Name {
     const val MILLISECONDS = "milliseconds"

@@ -1,10 +1,9 @@
-package com.example.background_works
+package com.example.m_2_6_background_works
 
 import android.app.AlarmManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
-import android.util.Log
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
 import androidx.work.workDataOf
@@ -30,8 +29,6 @@ class WorkerTimer(
         dataBack.timeZone = TimeZone.getTimeZone("${viewModule.region}/${viewModule.city}")
         calendar.timeInMillis = prefr.getLong(Name.MILLISECONDS, 0L)
         App().createNotification(dataBack.format(calendar.timeInMillis), context)
-        Log.d("main12:", "${calendar.timeInMillis} ss ${dataBack.format(calendar.timeInMillis)}")
-        Log.d("main12:", ", ${dataBack.format(calendar.timeInMillis)}")
         alarmManager?.setExactAndAllowWhileIdle(
             AlarmManager.RTC_WAKEUP,
             calendar.timeInMillis,

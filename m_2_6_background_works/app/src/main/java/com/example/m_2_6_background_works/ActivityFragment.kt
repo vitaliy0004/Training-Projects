@@ -1,4 +1,4 @@
-package com.example.background_works
+package com.example.m_2_6_background_works
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,13 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
-import com.example.background_works.databinding.FragmentActivityBinding
+import com.example.m_2_6_background_works.databinding.FragmentActivityBinding
 
 
 class ActivityFragment : Fragment() {
     private var _binding: FragmentActivityBinding? = null
     private val binding get() = _binding!!
-    val viewModule: ViewModule by viewModels()
+    private val viewModule: ViewModule by viewModels()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

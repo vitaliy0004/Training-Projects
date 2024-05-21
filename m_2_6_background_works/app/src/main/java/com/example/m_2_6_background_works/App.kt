@@ -1,4 +1,4 @@
-package com.example.background_works
+package com.example.m_2_6_background_works
 
 import android.annotation.SuppressLint
 import android.app.Application
@@ -17,6 +17,7 @@ class App : Application() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
             createNotificationChannel()
     }
+
     @SuppressLint("NewApi")
     fun createNotificationChannel() {
         val name = "Test"
@@ -29,6 +30,7 @@ class App : Application() {
             getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         notificationManager.createNotificationChannel(channel)
     }
+
     @SuppressLint("MissingPermission")
     fun createNotification(time: String, context: Context) {
         val intent = Intent(context, MainActivity::class.java)
@@ -46,6 +48,7 @@ class App : Application() {
             .build()
         NotificationManagerCompat.from(context).notify(1000, notification)
     }
+
     companion object {
         const val NOTIFICATION_CHANNEL_ID = "test_channel_id"
     }

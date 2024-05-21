@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/activityFragment"
-        android:name="com.example.background_works.ActivityFragment"
+        android:name="com.example.m_2_6_background_works.ActivityFragment"
         android:label="fragment_activity"
         tools:layout="@layout/fragment_activity" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/timer2"
-        android:name="com.example.background_works.FragmentTimer"
+        android:name="com.example.m_2_6_background_works.FragmentTimer"
         android:label="fragment_timer"
         tools:layout="@layout/fragment_timer" >
         <action

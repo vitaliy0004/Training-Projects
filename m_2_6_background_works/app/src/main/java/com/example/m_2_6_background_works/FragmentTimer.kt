@@ -1,4 +1,4 @@
-package com.example.background_works
+package com.example.m_2_6_background_works
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -13,7 +13,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
-import com.example.background_works.databinding.FragmentTimerBinding
+import com.example.m_2_6_background_works.databinding.FragmentTimerBinding
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat
@@ -34,6 +34,7 @@ class FragmentTimer : Fragment() {
         prefs = requireContext().getSharedPreferences(Name.WORKER, Context.MODE_PRIVATE).edit()
         return binding.root
     }
+
     @SuppressLint("NewApi", "WrongConstant", "SuspiciousIndentation", "EnqueueWork")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -79,7 +80,11 @@ class FragmentTimer : Fragment() {
                     R.string.choose_time
                 )
             )
-                Toast.makeText(requireContext(), resources.getText(R.string.input_params), Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    requireContext(),
+                    resources.getText(R.string.input_params),
+                    Toast.LENGTH_SHORT
+                ).show()
             else {
                 viewModule.info()
                 prefs.putLong(Name.MILLISECONDS, viewModule.allMillis).apply()
@@ -88,6 +93,7 @@ class FragmentTimer : Fragment() {
             }
         }
     }
+
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
