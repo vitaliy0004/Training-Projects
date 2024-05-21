@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">Module_2_19_FIREBASE</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_fragment">Hello World!</string>
 </resources>

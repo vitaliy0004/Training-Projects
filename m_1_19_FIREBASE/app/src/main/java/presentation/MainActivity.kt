@@ -1,14 +1,11 @@
-package presintation
+package presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.module_2_19_firebase.R
-import com.example.module_2_19_firebase.databinding.ActivityMainBinding
-import com.google.firebase.crashlytics.FirebaseCrashlytics
-import java.lang.Exception
+import com.example.m_1_19_FIREBASE.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)

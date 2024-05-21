@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Module_2_19_FIREBASE" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.m_1_19_FIREBASE" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.Module_2_19_FIREBASE" parent="Base.Theme.Module_2_19_FIREBASE" />
+    <style name="Theme.m_1_19_FIREBASE" parent="Base.Theme.m_1_19_FIREBASE" />
 </resources>

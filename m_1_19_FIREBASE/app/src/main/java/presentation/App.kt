@@ -1,4 +1,4 @@
-package presintation
+package presentation
 
 import android.annotation.SuppressLint
 import android.app.Application
@@ -6,10 +6,9 @@ import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
 import android.os.Build
-import com.google.firebase.crashlytics.BuildConfig
 import com.google.firebase.crashlytics.FirebaseCrashlytics
 
-class App:Application() {
+class App : Application() {
     override fun onCreate() {
         super.onCreate()
         FirebaseCrashlytics.getInstance().setCrashlyticsCollectionEnabled(true)
@@ -31,6 +30,6 @@ class App:Application() {
     }
 
     companion object {
-     val NOTIFICATION_CHANNEL_ID = "test_channel_id"
-}
+        const val NOTIFICATION_CHANNEL_ID = "test_channel_id"
+    }
 }

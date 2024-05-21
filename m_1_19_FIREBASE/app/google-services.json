@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "280957381055",
-    "project_id": "nomadic-vehicle-413713",
-    "storage_bucket": "nomadic-vehicle-413713.appspot.com"
+    "project_number": "585967261787",
+    "project_id": "ferst-projekt-9e974",
+    "storage_bucket": "ferst-projekt-9e974.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:280957381055:android:8621864246e9b8621d190a",
+        "mobilesdk_app_id": "1:585967261787:android:90d3f6b7312f9b8c7b877e",
         "android_client_info": {
-          "package_name": "com.example.module_2_19_firebase"
+          "package_name": "com.example.m_1_19_FIREBASE"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCIQ6NmhSlJOWMo0XPFcWySakEwn7ZK51I"
+          "current_key": "AIzaSyBR6JTa5QjfTkAO8K0oEHmiqbHaM7DOQ10"
         }
       ],
       "services": {
