@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#B9ABD8"
-    tools:context="presintation.MainFragment">
+    tools:context="com.example.m_1_17_permissions.presentation.MainFragment">
 
     <Button
         android:id="@+id/delete"

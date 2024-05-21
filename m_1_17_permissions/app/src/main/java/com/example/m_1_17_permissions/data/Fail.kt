@@ -1,6 +1,5 @@
-package data
+package com.example.m_1_17_permissions.data
 
-import android.provider.ContactsContract.RawContacts.Data
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -9,7 +8,7 @@ import androidx.room.PrimaryKey
 data class Fail(
     @PrimaryKey
     @ColumnInfo(name = "failKay")
-    val fail:String,
+    val fail: String,
     @ColumnInfo(name = "data")
     val data: String
 )

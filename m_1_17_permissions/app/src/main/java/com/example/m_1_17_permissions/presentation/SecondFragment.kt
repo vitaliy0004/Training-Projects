@@ -1,4 +1,4 @@
-package presintation
+package com.example.m_1_17_permissions.presentation
 
 import android.content.ContentValues
 import android.content.pm.PackageManager
@@ -20,31 +20,28 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import com.example.module_2_17_permissions.R
-import com.example.module_2_17_permissions.databinding.FragmentSecondBinding
-import data.App
-import data.FailDao
+import com.example.m_1_17_permissions.R
+import com.example.m_1_17_permissions.data.App
+import com.example.m_1_17_permissions.data.FailDao
+import com.example.m_1_17_permissions.databinding.FragmentSecondBinding
+import dagger.hilt.android.AndroidEntryPoint
 import java.text.SimpleDateFormat
 import java.util.Locale
 import java.util.concurrent.Executor
 
 private const val FILENAME_FORMAT = "dd.MM.yyyy (HH:mm)"
+
+@AndroidEntryPoint
 class SecondFragment : Fragment() {
 
-    private val viewModel: MainViewModel by viewModels {
-        object : ViewModelProvider.Factory {
-            override fun <T : ViewModel> create(modelClass: Class<T>): T {
-                val photoDao: FailDao = (activity?.application as App).db.failDao()
-                return MainViewModel(photoDao) as T
-            }
-        }
-    }
+    private val viewModel: MainViewModel by viewModels()
 
     private var dataPhoto = SimpleDateFormat(FILENAME_FORMAT, Locale.US)
         .format(System.currentTimeMillis())
-    private var launcher = registerForActivityResult(ActivityResultContracts.RequestPermission()){isGranted ->
-        Toast.makeText(requireContext(), "permission is $isGranted", Toast.LENGTH_SHORT).show()
-    }
+    private var launcher =
+        registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted ->
+            Toast.makeText(requireContext(), "permission is $isGranted", Toast.LENGTH_SHORT).show()
+        }
     private var imageCapture: ImageCapture? = null
     private lateinit var executor: Executor
 
@@ -61,6 +58,7 @@ class SecondFragment : Fragment() {
         checkPermissions()
         return binding.root
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         checkPermissions()
@@ -71,13 +69,25 @@ class SecondFragment : Fragment() {
     }
 
     private fun checkPermissions() {
-        if (ContextCompat.checkSelfPermission(requireContext(), android.Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED){
+        if (ContextCompat.checkSelfPermission(
+                requireContext(),
+                android.Manifest.permission.CAMERA
+            ) == PackageManager.PERMISSION_GRANTED
+        ) {
             startCamera()
             Toast.makeText(requireContext(), "permission is Granted", Toast.LENGTH_SHORT).show()
         }
-        while (ContextCompat.checkSelfPermission(requireContext(), android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
+        while (ContextCompat.checkSelfPermission(
+                requireContext(),
+                android.Manifest.permission.CAMERA
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
             launcher.launch(android.Manifest.permission.CAMERA)
-            if (ContextCompat.checkSelfPermission(requireContext(), android.Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED){
+            if (ContextCompat.checkSelfPermission(
+                    requireContext(),
+                    android.Manifest.permission.CAMERA
+                ) == PackageManager.PERMISSION_GRANTED
+            ) {
                 startCamera()
                 Toast.makeText(requireContext(), "permission is Granted", Toast.LENGTH_SHORT).show()
                 break
@@ -107,7 +117,7 @@ class SecondFragment : Fragment() {
 
 
     private fun takePhoto() {
-        val imageCapture2 = imageCapture?: return
+        val imageCapture2 = imageCapture ?: return
 
         dataPhoto = SimpleDateFormat(FILENAME_FORMAT, Locale.US)
             .format(System.currentTimeMillis())
@@ -127,15 +137,23 @@ class SecondFragment : Fragment() {
         imageCapture2.takePicture(
             outputOptions,
             executor,
-            object : ImageCapture.OnImageSavedCallback{
+            object : ImageCapture.OnImageSavedCallback {
                 override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults) {
-                    Toast.makeText(requireContext(), "photo saved ${outputFileResults.savedUri}" , Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        requireContext(),
+                        "photo saved ${outputFileResults.savedUri}",
+                        Toast.LENGTH_SHORT
+                    ).show()
                     // сохранние из галереи в БД
-                   viewModel.savePhoto(outputFileResults.savedUri.toString(), dataPhoto)
+                    viewModel.savePhoto(outputFileResults.savedUri.toString(), dataPhoto)
                 }
 
                 override fun onError(exception: ImageCaptureException) {
-                    Toast.makeText(requireContext(), "photo failed ${exception.message}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        requireContext(),
+                        "photo failed ${exception.message}",
+                        Toast.LENGTH_SHORT
+                    ).show()
                     exception.printStackTrace()
                 }
             }

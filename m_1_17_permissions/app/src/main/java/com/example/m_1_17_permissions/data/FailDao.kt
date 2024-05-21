@@ -1,4 +1,4 @@
-package data
+package com.example.m_1_17_permissions.data
 
 import androidx.room.Dao
 import androidx.room.Delete
@@ -11,10 +11,13 @@ import kotlinx.coroutines.flow.Flow
 interface FailDao {
     @Query("SELECT * FROM `fail`")
     fun getFail(): Flow<List<Fail>>
+
     @Insert
-    suspend fun addFail(fail:Fail)
+    suspend fun addFail(fail: Fail)
+
     @Delete
-    suspend fun deleteFail(fail:List<Fail>)
+    suspend fun deleteFail(fail: List<Fail>)
+
     @Update
     suspend fun update(nowFail: Fail)
 }
