@@ -4,7 +4,7 @@
 <h3 align="left">m_1_10 - Shared Preference, работа с Progresbar</h3>
 <h3 align="left">m_1_11 - более углоблённое знакомство с Shared Preference</h3>
 <h3 align="left">m_1_12 - знакоства c патернем mvvm</h3>
-<h3 align="left">m_1_13 - знакомство с retrofit,Json,moshi и glide</h3>
+<h3 align="left">m_1_13 - знакомство с библиотеками retrofit,Json,moshi и glide</h3>
 <h3 align="left">m_1_14</h3>
 <h3 align="left">m_1_15</h3>
 <h3 align="left">m_1_16</h3>
