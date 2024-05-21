@@ -1,11 +1,11 @@
 <h1 align="center">В этом репозитории представленые тренеровочные проекты, каждый из которых закрепляет определённую тему</h1>
 
-<h3 align="left">m_1_9 - AndroidX Navigation, animetion(Переходы между компонентами,Сложные анимации,Lottie),Работа с AndroidManifest(изменение иконы приложения, темы приложения, подлючениеинтернета) ,работа со стилями,работа с ресурсами проекта (raw,anim,font),работа со строками,Часовые пояса(выбор времяни и даты)</h3>
+<h3 align="left">m_1_09 - AndroidX Navigation, animetion(Переходы между компонентами,Сложные анимации,Lottie),Работа с AndroidManifest(изменение иконы приложения, темы приложения, подлючениеинтернета) ,работа со стилями,работа с ресурсами проекта (raw,anim,font),работа со строками,Часовые пояса(выбор времяни и даты)</h3>
 <h3 align="left">m_1_10 - Shared Preference, работа с Progresbar</h3>
 <h3 align="left">m_1_11 - более углоблённое знакомство с Shared Preference</h3>
 <h3 align="left">m_1_12 - знакоства c патернем mvvm</h3>
 <h3 align="left">m_1_13 - знакомство с библиотеками retrofit,Json,moshi и glide</h3>
-<h3 align="left">m_1_14</h3>
+<h3 align="left">m_1_14 - знакомство с room database</h3>
 <h3 align="left">m_1_15</h3>
 <h3 align="left">m_1_16</h3>
 <h3 align="left">m_1_17</h3>
