@@ -19,10 +19,9 @@ private const val ARG_PARAM2 = "param2"
 class Test : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
-    private var _binding : FragmentTestBinding? = null
+    private var _binding: FragmentTestBinding? = null
     private val binding get() = _binding!!
     lateinit var question: Quiz
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,11 +39,12 @@ class Test : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentTestBinding.inflate(inflater)
-       if(resources.getStringArray(R.array.question_one_answers)[0] == "F") question = QuizStorage.getQuiz(QuizStorage.Locale.En)
+        if (resources.getStringArray(R.array.question_one_answers)[0] == "F") question =
+            QuizStorage.getQuiz(QuizStorage.Locale.En)
         else question = QuizStorage.getQuiz(QuizStorage.Locale.Ru)
-        val list = mutableListOf<Int>(1,2,3)
+        val list = mutableListOf<Int>(1, 2, 3)
         binding.button1.setOnClickListener {
-            binding.textView.text = QuizStorage.answer(question,list)
+            binding.textView.text = QuizStorage.answer(question, list)
             val bundle = Bundle().apply { putString("param1", binding.textView.text.toString()) }
             findNavController().navigate(R.id.action_test_to_test_result, bundle)
         }
@@ -53,19 +53,19 @@ class Test : Fragment() {
 
         binding.radioText1.text = resources.getStringArray(R.array.question)[0]
         binding.radiobutton11.text = resources.getStringArray(R.array.question_one_feedback)[0]
-        binding.radiobutton12.text =  resources.getStringArray(R.array.question_one_feedback)[1]
-        binding.radiobutton13.text =  resources.getStringArray(R.array.question_one_feedback)[2]
-        binding.radiobutton14.text =  resources.getStringArray(R.array.question_one_feedback)[3]
+        binding.radiobutton12.text = resources.getStringArray(R.array.question_one_feedback)[1]
+        binding.radiobutton13.text = resources.getStringArray(R.array.question_one_feedback)[2]
+        binding.radiobutton14.text = resources.getStringArray(R.array.question_one_feedback)[3]
         binding.radioText2.text = resources.getStringArray(R.array.question)[1]
         binding.radiobutton21.text = resources.getStringArray(R.array.question_two_feedback)[0]
-        binding.radiobutton22.text =  resources.getStringArray(R.array.question_two_feedback)[1]
+        binding.radiobutton22.text = resources.getStringArray(R.array.question_two_feedback)[1]
         binding.radiobutton23.text = resources.getStringArray(R.array.question_two_feedback)[2]
-        binding.radiobutton24.text =  resources.getStringArray(R.array.question_two_feedback)[3]
+        binding.radiobutton24.text = resources.getStringArray(R.array.question_two_feedback)[3]
         binding.radioText3.text = resources.getStringArray(R.array.question)[2]
-        binding.radiobutton31.text =  resources.getStringArray(R.array.question_three_feedback)[0]
+        binding.radiobutton31.text = resources.getStringArray(R.array.question_three_feedback)[0]
         binding.radiobutton32.text = resources.getStringArray(R.array.question_three_feedback)[1]
-        binding.radiobutton33.text =  resources.getStringArray(R.array.question_three_feedback)[2]
-        binding.radiobutton34.text =  resources.getStringArray(R.array.question_three_feedback)[3]
+        binding.radiobutton33.text = resources.getStringArray(R.array.question_three_feedback)[2]
+        binding.radiobutton34.text = resources.getStringArray(R.array.question_three_feedback)[3]
 
 
         binding.radioText2.alpha = 0f
@@ -86,7 +86,8 @@ class Test : Fragment() {
         binding.button2.setOnClickListener {
             findNavController().navigate(R.id.action_test_to_welcome2)
         }
-        return binding.root }
+        return binding.root
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()

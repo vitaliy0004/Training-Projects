@@ -77,7 +77,7 @@ object QuizStorage {
                     "A++",
                 ),
                 feedback = listOf(
-                    "You have rated us F." ,
+                    "You have rated us F.",
                     "You have rated us C.",
                     "You have rated us B.",
                     "You have rated us A++.",

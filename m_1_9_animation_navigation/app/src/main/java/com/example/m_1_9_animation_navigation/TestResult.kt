@@ -18,7 +18,7 @@ private const val ARG_PARAM2 = "param2"
 class TestResult : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
-    private var _binding : FragmentTestResultBinding? = null
+    private var _binding: FragmentTestResultBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,7 +30,6 @@ class TestResult : Fragment() {
     }
 
 
-
     @SuppressLint("NewApi")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -38,17 +37,19 @@ class TestResult : Fragment() {
     ): View? {
         _binding = FragmentTestResultBinding.inflate(inflater)
 
-        ObjectAnimator.ofArgb(binding.textView,"textColor",
-            Color.parseColor("#B83986"),Color.parseColor("#FF0000FF")
+        ObjectAnimator.ofArgb(
+            binding.textView, "textColor",
+            Color.parseColor("#B83986"), Color.parseColor("#FF0000FF")
         ).apply {
-                duration = 4000
-                interpolator = AccelerateDecelerateInterpolator()
-                repeatCount = ObjectAnimator.INFINITE
-                repeatMode = ObjectAnimator.RESTART
-                start()
-            }
-        ObjectAnimator.ofArgb(binding.button,"textColor",
-            Color.parseColor("#FFEB3B"),Color.parseColor("#FF000000")
+            duration = 4000
+            interpolator = AccelerateDecelerateInterpolator()
+            repeatCount = ObjectAnimator.INFINITE
+            repeatMode = ObjectAnimator.RESTART
+            start()
+        }
+        ObjectAnimator.ofArgb(
+            binding.button, "textColor",
+            Color.parseColor("#FFEB3B"), Color.parseColor("#FF000000")
         ).apply {
             duration = 4000
             interpolator = AccelerateDecelerateInterpolator()
@@ -68,6 +69,7 @@ class TestResult : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.textView.text = param1
     }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

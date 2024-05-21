@@ -19,5 +19,13 @@
         <item name="colorSurface">?attr/colorOnPrimary</item>
 
     </style>
+    <style name="g_text">
+        android:text="g"
+        android:textSize="16sp"
+    </style>
+    <style name="fd_text">
+        android:text="fd"
+        android:textSize="16sp"
+    </style>
     <style name="Theme.m_1_9_animation_navigation" parent="Base.Theme.m_1_9_animation_navigation" />
 </resources>

@@ -1,10 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name" translatable="false">school mem</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="date_of_Birth">indicate your date of birth</string>
     <string name="indicate_your_date">indicate your date of birth</string>
     <string name="button_finish">begin</string>
+    <string name="finish_text" translatable="false">тест пройден успешно</string>
+    <string name="g" translatable="false">g</string>
+    <string name="fd" translatable="false">fd</string>
     <string name="enter_date_of_birth">enter date of birth</string>
    <string name="check_the_result">check the result</string>
     <string name="back">back</string>
@@ -51,5 +54,7 @@
         <item>Waiting for your feedback!</item>
         <item>We hope you will have the opportunity to give us feedback.</item>
     </string-array>
+
     <string name="indicate_your_date_of_birth">indicate your date of birth</string>
+
 </resources>

@@ -22,11 +22,12 @@ class Welcome : Fragment() {
 
     private var param1: String? = null
     private var param2: String? = null
-    private var _binding : FragmentWelcomeBinding? = null
+    private var _binding: FragmentWelcomeBinding? = null
     private val binding get() = _binding!!
 
     @SuppressLint("SimpleDateFormat")
     val dateFormat = SimpleDateFormat("dd-MM-yy")
+
     @SuppressLint("NewApi")
     val calendar = Calendar.getInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,19 +49,24 @@ class Welcome : Fragment() {
             findNavController().navigate(R.id.action_welcome_to_test)
         }
         binding.buttonDay.setOnClickListener {
-            val dataDialog= MaterialDatePicker.Builder.datePicker()
-               .setTitleText(resources.getString(R.string.indicate_your_date))
-               .build()
+            val dataDialog = MaterialDatePicker.Builder.datePicker()
+                .setTitleText(resources.getString(R.string.indicate_your_date))
+                .build()
 
 
-            dataDialog.addOnPositiveButtonClickListener{ timeInMillis ->
+            dataDialog.addOnPositiveButtonClickListener { timeInMillis ->
                 calendar.timeInMillis = timeInMillis
-                Snackbar.make(binding.buttonDay, dateFormat.format(calendar.time), Snackbar.LENGTH_SHORT).show()
+                Snackbar.make(
+                    binding.buttonDay,
+                    dateFormat.format(calendar.time),
+                    Snackbar.LENGTH_SHORT
+                ).show()
             }
             dataDialog.show(childFragmentManager, "dataPiker")
-            }
+        }
         return binding.root
     }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
