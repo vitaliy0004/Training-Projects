@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">m_1_10_shared_preference</string>
+    <string name="counter">10</string>
+    <string name="countdown_timer">countdown Timer</string>
+    <string name="start">Start</string>
+</resources>
