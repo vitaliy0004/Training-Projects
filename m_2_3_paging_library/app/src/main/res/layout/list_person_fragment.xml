@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/tealWhite"
     android:visibility="visible"
-    tools:context="presentation.ListPersonFragment">
+    tools:context="com.example.m_2_3_paging_library.presentation.ListPersonFragment">
      <Button
          android:id="@+id/button"
          android:layout_width="wrap_content"

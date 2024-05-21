@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Jetpack compose</string>
+    <string name="app_name">m_2_4_jetpack_compose</string>
     <string name="refresh">проверьте подключение\nк интернету</string>
     <string name="episode">Episodes:</string>
     <string name="first_seen">First seen in:</string>
