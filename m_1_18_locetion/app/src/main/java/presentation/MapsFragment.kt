@@ -1,4 +1,4 @@
-package presintation
+package presentation
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -12,8 +12,8 @@ import android.view.ViewGroup
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.viewModels
-import com.example.module_2_18_locetion.R
-import com.example.module_2_18_locetion.databinding.FragmentMapsBinding
+import com.example.m_1_18_location.R
+import com.example.m_1_18_location.databinding.FragmentMapsBinding
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationServices
@@ -24,12 +24,13 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 
 
-class MapsFragment() : Fragment() {
+class MapsFragment : Fragment() {
     private var _binding: FragmentMapsBinding? = null
-    val binding get() = _binding!!
-    val viewModel: MainViewModel by viewModels()
+    private val binding get() = _binding!!
+    private val viewModel: MainViewModel by viewModels()
 
-    lateinit var fusedClient: FusedLocationProviderClient
+    private lateinit var fusedClient: FusedLocationProviderClient
+
     @SuppressLint("MissingPermission")
     fun startLocation() {
         val request = LocationRequest.Builder(Priority.PRIORITY_HIGH_ACCURACY, INTERVAL_MILLIS)
@@ -46,8 +47,11 @@ class MapsFragment() : Fragment() {
     }
 
     private fun checkPermissions() {
-        if(REQUIRED_PERMISSIONS.all { permission ->
-                ContextCompat.checkSelfPermission(this.requireContext(),permission) == PackageManager.PERMISSION_GRANTED
+        if (REQUIRED_PERMISSIONS.all { permission ->
+                ContextCompat.checkSelfPermission(
+                    this.requireContext(),
+                    permission
+                ) == PackageManager.PERMISSION_GRANTED
             })
             startLocation()
         else launcher.launch(REQUIRED_PERMISSIONS)
@@ -62,6 +66,7 @@ class MapsFragment() : Fragment() {
         }
 
     }
+
     override fun onStart() {
         super.onStart()
         checkPermissions()
@@ -75,17 +80,18 @@ class MapsFragment() : Fragment() {
             isMyLocationButtonEnabled = true
         }
         viewModel.map?.isMyLocationEnabled = true
-            viewModel.map?.setInfoWindowAdapter(MarkerInfo(requireContext()))
-            viewModel.places.forEach { place ->
-                val latLng = LatLng(place.location_lat, place.location_lag)
-                val marker = viewModel.map?.addMarker(
-                    MarkerOptions()
-                        .title(place.name)
-                        .position(latLng)
-                )
-                marker?.tag = place
-            }
+        viewModel.map?.setInfoWindowAdapter(MarkerInfo(requireContext()))
+        viewModel.places.forEach { place ->
+            val latLng = LatLng(place.location_lat, place.location_lag)
+            val marker = viewModel.map?.addMarker(
+                MarkerOptions()
+                    .title(place.name)
+                    .position(latLng)
+            )
+            marker?.tag = place
+        }
     }
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -105,7 +111,7 @@ class MapsFragment() : Fragment() {
         private val INTERVAL_MILLIS = 1000L
         private val MIN_MILLIS = 500L
         private val MAX_MILLIS = 1000L
-        private val REQUIRED_PERMISSIONS: Array<String> =  arrayOf(
+        private val REQUIRED_PERMISSIONS: Array<String> = arrayOf(
             Manifest.permission.ACCESS_FINE_LOCATION,
             Manifest.permission.ACCESS_COARSE_LOCATION
         )

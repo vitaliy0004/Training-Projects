@@ -1,17 +1,17 @@
-package presintation
+package presentation
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.TextView
-import com.example.module_2_18_locetion.R
+import com.example.m_1_18_location.R
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.model.Marker
 import data.LocationStructure
 
 class MarkerInfo(
     private val context: Context
-): GoogleMap.InfoWindowAdapter {
+) : GoogleMap.InfoWindowAdapter {
     override fun getInfoContents(marker: Marker): View? {
         val place = marker.tag as? LocationStructure ?: return null
         val view = LayoutInflater.from(context).inflate(R.layout.marker_info_contents, null)
@@ -21,6 +21,6 @@ class MarkerInfo(
     }
 
     override fun getInfoWindow(marker: Marker): View? {
-      return null
+        return null
     }
 }

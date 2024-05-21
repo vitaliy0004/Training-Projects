@@ -1,10 +1,8 @@
-package presintation
+package presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.module_2_18_locetion.R
-import com.example.module_2_18_locetion.databinding.ActivityMainBinding
-import com.google.android.gms.maps.SupportMapFragment
+import com.example.m_1_18_location.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

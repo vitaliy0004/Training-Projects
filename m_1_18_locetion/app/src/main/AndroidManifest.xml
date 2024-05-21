@@ -15,7 +15,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Module_2_18_Locetion"
+        android:theme="@style/Theme.m_1_18_location"
         tools:targetApi="31">
 
         <!--
@@ -34,7 +34,7 @@
             android:value="@string/google_maps_key"/>
 
         <activity
-            android:name="presintation.MainActivity"
+            android:name="presentation.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
