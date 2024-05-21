@@ -1,7 +1,6 @@
 <h1 align="center">В этом репозитории представленые тренеровочные проекты, каждый из которых закрепляет определённую тему</h1>
 
-<h3 align="left">m_1_3</h3>
-<h3 align="left">m_1_9</h3>
+<h4 align="left">m_1_9 - AndroidX Navigation, animetion(Переходы между компонентами,Сложные анимации,Lottie),Работа с AndroidManifest(изменение иконы приложения, темы приложения) и стили</h4>
 <h3 align="left">m_1_10</h3>
 <h3 align="left">m_1_11</h3>
 <h3 align="left">m_1_12</h3>
