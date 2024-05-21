@@ -8,7 +8,7 @@
 <h3 align="left">m_1_14 - знакомство с room database</h3>
 <h3 align="left">m_1_15 - знакомство с Dagger,Hilt и архитектурой проекта; так же в проекте использовались библиотеки gson,retrofit,glide</h3>
 <h3 align="left">m_1_16 - знакомство с RecyclerView,Paging Library; так же в проекте использовались библиотеки navigation,retrofit,moshi,Hilt,glide</h3>
-<h3 align="left">m_1_17</h3>
+<h3 align="left">m_1_17 - знакомство с работой с камерой,изображнием фото из хранилища; так же в проекте использовались библиотеки navigation,dagger,Hilt,glide,room database,RecyclerView</h3>
 <h3 align="left">m_1_18</h3>
 <h3 align="left">m_1_19</h3>
 <h3 align="left">m_2_2</h3>
