@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">school mem</string>
+    <string name="date_of_Birth"> укажите дату вашего рождения</string>
+    <string name="button_finish">начать</string>
+    <string name="enter_date_of_birth">ввести дату рождения</string>
+    <string name="check_the_result">проверить результат </string>
+    <string name="back">назад</string>
+    <string name="restart">начать заново</string>
+    <string-array name="question">
+        <item>Как тебе наш Android курс?</item>
+        <item>Порекомендуешь его друзьям?</item>
+        <item>Пользовался ли ты обратной связью?</item>
+    </string-array>
+    <string-array name="question_one_answers">
+        <item>на 2</item>
+        <item>на 3</item>
+        <item>на 4</item>
+        <item>на 5</item>
+    </string-array>
+    <string-array name="question_one_feedback">
+        <item>Вам не нравится наш курс.</item>
+        <item>Вас удовлетворяет наш курс.</item>
+        <item>Вы оценили наш курс хорошо.</item>
+        <item>Вы оценили наш курс отлично.</item>
+    </string-array>
+    <string-array name="question_two_answers">
+        <item>Обзательно</item>
+        <item>Уже порекомендовал</item>
+        <item>Посмотрим, что будет дальше</item>
+        <item>Нет</item>
+    </string-array>
+    <string-array name="question_two_feedback">
+        <item>Вы готовы порекомендовать наш курс.</item>
+        <item>Вы уже порекомендовали курс своим друзьям.</item>
+        <item>Вам нужно больше времени, чтобы порекомендовать наш курс.</item>
+        <item>Вы не готовы рекомендовать наш курс.</item>
+    </string-array>
+    <string-array name="question_three_answers">
+        <item>Да</item>
+        <item>Еще нет, но сейчас воспользуюсь</item>
+        <item>Нет, еще не приходилось</item>
+        <item>Нет, и не буду</item>
+    </string-array>
+    <string-array name="question_three_feedback">
+        <item>Спасибо за обратную связь!</item>
+        <item>Спасибо за обратную связь!</item>
+        <item>Ждем вашу обратную связь!</item>
+        <item>Мы надеемся, что у вас пояится возможность дать нам обратную связь.</item>
+    </string-array>
+    <string name="indicate_your_date_of_birth">укажите совю дату рождения</string>
+    <string name="indicate_your_date">укажите свою дату рождения</string>
+</resources>
