@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="you_have_not_used">you have not\n used the search yet</string>
+    <string name="search">search</string>
+</resources>

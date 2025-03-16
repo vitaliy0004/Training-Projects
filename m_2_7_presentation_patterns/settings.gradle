@@ -14,3 +14,10 @@ dependencyResolutionManagement {
 }
 rootProject.name = "m_2_7_presentation_patterns"
 include ':app'
+include ':core'
+include ':city'
+include ':search'
+include ':network'
+include ':database'
+include ':const'
+include ':navigation'

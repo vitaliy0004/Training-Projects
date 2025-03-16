@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_city"
+    app:startDestination="@id/fragmentCity">
+
+    <fragment
+        android:id="@+id/fragmentCity"
+        android:name="com.example.fragmentcity.FragmentCity"
+        android:label="FragmentCity"
+        tools:layout="@layout/fragment_city">
+        <action
+            android:id="@+id/action_fragmentCity_to_navigation"
+            app:destination="@id/navigation" />
+    </fragment>
+    <include app:graph="@navigation/navigation_core" />
+</navigation>

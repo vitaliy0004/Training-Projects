@@ -6,7 +6,7 @@
         android:icon="@drawable/search"
         android:title="поиск" />
     <item
-        android:id="@+id/city"
+        android:id="@+id/citys"
         android:icon="@drawable/city"
         android:title="город"/>
 </menu>

@@ -3,13 +3,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ups">ups...</string>
+    <string name="city">City</string>
     <string name="city_not_found">city not found</string>
-    <string name="you_have_not_used">you have not\n used the search yet</string>
-    <string name="data_this_city">you deleted your data this city</string>
-    <string name="search">search</string>
-    <string name="check_internet">check your internet\n           connection</string>
-    <string name="load">Looking for a city...</string>
-    <string name="city">city</string>
-    <string name="data">Data</string>
-    <string name="temperature">temperature</string>
+     <string name="data_this_city">you deleted your data this city</string>
 </resources>
