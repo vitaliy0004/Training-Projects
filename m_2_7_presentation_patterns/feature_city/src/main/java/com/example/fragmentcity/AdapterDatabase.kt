@@ -3,7 +3,7 @@ package com.example.fragmentcity
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.city.databinding.ItemListCityBinding
+import com.example.feature_city.databinding.ItemListCityBinding
 
 class AdapterDatabase(
     private val onClick: (String) -> Unit,

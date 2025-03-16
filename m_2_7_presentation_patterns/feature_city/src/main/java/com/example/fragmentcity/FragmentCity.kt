@@ -12,8 +12,8 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.aconst.AppConstants.GET_CITY
 import com.example.aconst.AppConstants.LAST_CITY
-import com.example.city.R
-import com.example.city.databinding.FragmentCityBinding
+import com.example.feature_city.R
+import com.example.feature_city.databinding.FragmentCityBinding
 import com.example.core.view_model.ViewModuleDatabase
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch

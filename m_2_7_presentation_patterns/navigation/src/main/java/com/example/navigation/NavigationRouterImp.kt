@@ -59,8 +59,8 @@ class NavigationRouterImp @Inject constructor() : NavigationRouter {
             AppConstants.CORE_MODULE + AppConstants.CITY_TAB ->
                 return com.example.core.R.navigation.navigation_core
 
-            AppConstants.SEARCH_TAB -> return com.example.search.R.navigation.nav_graph_search
-            AppConstants.CITY_TAB -> return com.example.city.R.navigation.nav_graph_city
+            AppConstants.SEARCH_TAB -> return com.example.feature_search.R.navigation.nav_graph_search
+            AppConstants.CITY_TAB -> return com.example.feature_city.R.navigation.nav_graph_city
 //            else -> {
 //                throw (Exception("NavigationRouterImp: Name Graph"))
 //                return  AppConstants.EXCEPTION_INT

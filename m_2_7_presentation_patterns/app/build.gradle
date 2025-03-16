@@ -80,9 +80,9 @@ dependencies {
 
     implementation project(":navigation")
     implementation project(":const")
-    implementation project(":city")
+    implementation project(":feature_city")
     implementation project(":core")
-    implementation project(":search")
+    implementation project(":feature_search")
     implementation project(":network")
     implementation project(":database")
 }

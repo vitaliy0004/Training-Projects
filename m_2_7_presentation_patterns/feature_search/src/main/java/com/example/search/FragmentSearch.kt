@@ -16,7 +16,7 @@ import com.example.aconst.AppConstants.LAST_CITY
 import com.example.aconst.AppConstants.LIST_CITY
 import com.example.core.navigation.NavigationRouter
 import com.example.core.navigation.SomeViewModel
-import com.example.search.databinding.FragmentSearchBinding
+import com.example.feature_search.databinding.FragmentSearchBinding
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

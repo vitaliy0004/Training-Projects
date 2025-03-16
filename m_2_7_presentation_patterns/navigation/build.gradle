@@ -57,7 +57,7 @@ dependencies {
     kapt 'com.google.dagger:dagger-compiler:2.50'
 
     implementation project(":const")
-    implementation project(":city")
+    implementation project(":feature_city")
     implementation project(":core")
-    implementation project(":search")
+    implementation project(":feature_search")
 }

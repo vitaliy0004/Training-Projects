@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.city'
+    namespace 'com.example.feature_city'
     compileSdk 34
 
     defaultConfig {

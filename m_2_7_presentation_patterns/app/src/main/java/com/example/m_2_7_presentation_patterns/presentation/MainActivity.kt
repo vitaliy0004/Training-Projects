@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.search -> {
                     navRouter.switchTab(
                         AppConstants.SEARCH_TAB,
-                        com.example.search.R.navigation.nav_graph_search
+                        com.example.feature_search.R.navigation.nav_graph_search
                     )
                     true
                 }
@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.citys -> {
                     navRouter.switchTab(
                         AppConstants.CITY_TAB,
-                        com.example.city.R.navigation.nav_graph_city
+                        com.example.feature_city.R.navigation.nav_graph_city
                     )
                     true
                 }
@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
                 else -> {
                     navRouter.switchTab(
                         AppConstants.SEARCH_TAB,
-                        com.example.search.R.navigation.nav_graph_search
+                        com.example.feature_search.R.navigation.nav_graph_search
                     )
                     false
                 }
